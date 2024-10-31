@@ -1,13 +1,10 @@
 import "./styles.css";
-import { isValidPassword } from "./myTest/inputValidator";
 const { generateText, createElement, validateInput } = require("./util");
 
 const initApp = () => {
 	// Initializes the app, registers the button click listener
 	const newUserButton = document.querySelector("#btnAddUser");
 	newUserButton.addEventListener("click", addUser);
-	const pas = isValidPassword("P@ssw0rd!");
-	console.log(pas);
 };
 
 const addUser = () => {
